@@ -18,14 +18,27 @@
             Hello JavaScript
         </div>
 
-        <button type="button" class="btn btn-success">Click me</button>
+        <button type="button" class="btn btn-success" onclick="start()" >Say Hello</button>
+        <label for="input1"> Input 1: </label> 
+        <input type="text" onchange="onInputChange(event)" class = "form-control" id ="input1">
+
+        <label for="integerinput1"> Integer Input 1: </label> 
+        <input type="text" class = "form-control" id ="integerinput1">
+        <label for="integerinput2"> Integer Input 2: </label> 
+        <input type="text"  class = "form-control" id ="integerinput2">
+
+        <button type="button" class="btn btn-success" onclick="checkIfInputIsNotNaN()" >Calculate sum</button>
+        
+
+        <button type="button" class="btn btn-success"  data-label="increment-button" onclick="calculateClickCount()" >Clicks</button>
+
     </div>
+    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="file.js"></script>
-
-
 
 </body>
 
